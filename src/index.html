@@ -5,20 +5,23 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <style>
+      #tooltip {
+        background-color: #333;
+        color: rgb(215, 40, 40);
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 13px;
+      }
+    </style>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
-
     <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
+      <button id="button" aria-describedby="tooltip">I'm a button</button>
+      <div id="tooltip" role="tooltip">I'm a tooltips</div>
     </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
