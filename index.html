@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    <style>
+      #tooltip {
+        background-color: #333;
+        color: rgb(215, 40, 40);
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 13px;
+      }
+    </style>
+    
+    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-e7a64771.css">
+  </head>
+  <body>
+    <section>
+      <button id="button" aria-describedby="tooltip">I'm a button</button>
+      <div id="tooltip" role="tooltip">I'm a tooltips</div>
+    </section>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    
+  </body>
+</html>
